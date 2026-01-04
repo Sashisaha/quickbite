@@ -6,6 +6,7 @@ import 'package:quickbite/app/data/image_path.dart';
 import '../controllers/splash_screen_controller.dart';
 
 class SplashScreenView extends GetView<SplashScreenController> {
+
   const SplashScreenView({super.key});
   @override
   Widget build(BuildContext context) {

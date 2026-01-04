@@ -1,23 +1,27 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import '../../../routes/app_pages.dart';
 
 class Onboarding1Controller extends GetxController {
-  //TODO: Implement Onboarding1Controller
+  final pageController = PageController();
+  RxInt currentIndex = 0.obs;
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
+  void onPageChanged(int index) => currentIndex.value = index;
 
-  @override
-  void onReady() {
-    super.onReady();
+  void nextPage() {
+    if (currentIndex.value < 2) {
+      pageController.nextPage(
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeInOut,
+      );
+    } else {
+      Get.offAllNamed(Routes.SIGN_IN);
+    }
   }
 
   @override
   void onClose() {
+    pageController.dispose();
     super.onClose();
   }
-
-  void increment() => count.value++;
 }
