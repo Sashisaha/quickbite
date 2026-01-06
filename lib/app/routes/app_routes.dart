@@ -14,6 +14,8 @@ abstract class Routes {
   static const VERIFY_PHONE_NUMBER = _Paths.VERIFY_PHONE_NUMBER;
   static const VERIF_PINCORD = _Paths.VERIF_PINCORD;
   static const LOCATION = _Paths.LOCATION;
+  static const SEARCH_LOCATION = _Paths.SEARCH_LOCATION;
+  static const HOME = _Paths.HOME;
 }
 
 abstract class _Paths {
@@ -29,4 +31,6 @@ abstract class _Paths {
   static const VERIFY_PHONE_NUMBER = '/verify-phone-number';
   static const VERIF_PINCORD = '/verif-pincord';
   static const LOCATION = '/location';
+  static const SEARCH_LOCATION = '/search-location';
+  static const HOME = '/home';
 }

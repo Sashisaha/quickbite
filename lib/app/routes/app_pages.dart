@@ -4,10 +4,14 @@ import '../modules/check_mail/bindings/check_mail_binding.dart';
 import '../modules/check_mail/views/check_mail_view.dart';
 import '../modules/forgot_password/bindings/forgot_password_binding.dart';
 import '../modules/forgot_password/views/forgot_password_view.dart';
+import '../modules/home/bindings/home_binding.dart';
+import '../modules/home/views/home_view.dart';
 import '../modules/location/bindings/location_binding.dart';
 import '../modules/location/views/location_view.dart';
 import '../modules/onboarding1/bindings/onboarding1_binding.dart';
 import '../modules/onboarding1/views/onboarding1_view.dart';
+import '../modules/search_location/bindings/search_location_binding.dart';
+import '../modules/search_location/views/search_location_view.dart';
 import '../modules/sign_in/bindings/sign_in_binding.dart';
 import '../modules/sign_in/views/sign_in_view.dart';
 import '../modules/sign_up/bindings/sign_up_binding.dart';
@@ -71,6 +75,16 @@ class AppPages {
       name: _Paths.LOCATION,
       page: () => const LocationView(),
       binding: LocationBinding(),
+    ),
+    GetPage(
+      name: _Paths.SEARCH_LOCATION,
+      page: () => const SearchLocationView(),
+      binding: SearchLocationBinding(),
+    ),
+    GetPage(
+      name: _Paths.HOME,
+      page: () => const HomeView(),
+      binding: HomeBinding(),
     ),
   ];
 }

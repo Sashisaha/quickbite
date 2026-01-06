@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:get/get.dart';
 import 'package:quickbite/app/data/app_text_styles.dart';
-
 import '../../../data/app_Colors.dart';
-import '../../../routes/app_pages.dart';
 import '../controllers/check_mail_controller.dart';
 
 class CheckMailView extends GetView<CheckMailController> {
@@ -51,6 +48,8 @@ class CheckMailView extends GetView<CheckMailController> {
                 ),
               ),
               SizedBox(height: 45.h,),
+
+
               SizedBox(
                 height: 51.h,
                 width: double.infinity,

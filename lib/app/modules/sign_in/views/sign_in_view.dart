@@ -86,7 +86,7 @@ class SignInView extends GetView<SignInController> {
                   height: 51.h,
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {Get.toNamed(Routes.HOME);},
                     child: Text(
                       "SIGN IN",
                       style: AppTextStyles.medium14.copyWith(

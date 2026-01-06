@@ -52,7 +52,7 @@ class LocationView extends GetView<LocationController> {
                 height: 51.h,
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {Get.toNamed(Routes.LOCATION);},
+                  onPressed: () {Get.toNamed(Routes.HOME);},
                   child: Text(
                     "Use current location",
                     style: AppTextStyles.bold14.copyWith(
@@ -62,8 +62,10 @@ class LocationView extends GetView<LocationController> {
                 ),
               ),
               SizedBox(height: 22.h,),
-              OutlinedButton(onPressed: () {},
-                  child: Text(""))
+              SizedBox(height: 51.h,width:double.infinity,
+                child: OutlinedButton(onPressed: () {Get.toNamed(Routes.SEARCH_LOCATION);},
+                    child: Text("Enter a new address")),
+              )
             ],
           ),
         ),
